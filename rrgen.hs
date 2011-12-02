@@ -7,7 +7,7 @@ writePoint (x,y) = show x ++ "," ++ show y ++ " "
 
 writePolygon :: Polygon -> String
 writePolygon p = "<polygon points=\"" ++ concatMap writePoint p
-                ++ "\" style=\"fill:#ffffff;stroke:#000000;stroke-width:2\"/>"
+                ++ "\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1\"/>"
 
 writePolygons :: [Polygon] -> String
 writePolygons p = "<svg xmlns=\"http://www.w3.org/2000/svg\">"
